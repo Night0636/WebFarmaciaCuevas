@@ -1,2 +1,2 @@
-# WebFarmaciaCuevas
- Web projecte m12
+# Web Farmacia Cuevas
+ Web del projecte d'M12.
