@@ -1,0 +1,24 @@
+.buscador {
+    margin-left: 1200px;
+    object-position: top;
+}
+
+.top li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.top{
+    margin-left: 500px;
+    margin-bottom: 300px;
+}
+.titulo1{
+    margin-bottom: 1000px;
+}
+
+.encabezado{
+    border-width:1px;
+    border-style: solid;
+    border-color:rgb(0, 0, 0);
+}
