@@ -1,5 +1,6 @@
 *{
     margin: 0em;
+    text-decoration: none;
 }
 
 body{
@@ -40,4 +41,11 @@ header .logo{
 .buscador{
     flex: 4;
     margin-left: 50em;
+}
+
+.linkButton{
+    border: 1px solid black;
+    padding: 0.5em;
+
+    background-color: cadetblue;
 }
