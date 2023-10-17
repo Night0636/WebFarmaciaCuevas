@@ -1,24 +1,43 @@
-.buscador {
-    margin-left: 1200px;
-    object-position: top;
+*{
+    margin: 0em;
 }
 
-.top li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
+body{
+    display: flex;
+    flex-direction: column;
 
 }
-.top{
-    margin-left: 500px;
-    margin-bottom: 300px;
-}
-.titulo1{
-    margin-bottom: 1000px;
+
+header{
+    display: flex;
+    flex-direction: row;
+
+    border: black 0.1em solid;
+    background-color: aquamarine;
+
+    align-items: center;
+    justify-content: center;
+
 }
 
-.encabezado{
-    border-width:1px;
-    border-style: solid;
-    border-color:rgb(0, 0, 0);
+/* Aquestes regles estil correspon al logo del header */
+header .logo{
+    flex: 1;
+
+    display: flex;
+    justify-content: left;
+}
+
+#imatge_logo{
+    max-height: 10em;
+    max-width: 100%;
+
+    margin: 2em;
+
+}
+
+/* Aquestes regles estil correspon al buscador del header */
+.buscador{
+    flex: 4;
+    margin-left: 50em;
 }
