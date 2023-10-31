@@ -21,6 +21,15 @@ header{
 
 }
 
+nav.res{
+    display: flex;
+    flex-direction: row;
+
+    border: black 0.1em solid;
+    background-color: aquamarine;
+
+}
+
 /* Aquestes regles estil correspon al logo del header */
 header .logo{
     flex: 1;
@@ -49,3 +58,34 @@ header .logo{
 
     background-color: cadetblue;
 }
+
+.dropdown {
+    margin-left: 2em;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(205, 252, 211);
+    height: 3em;
+    width: 5em;
+    justify-content: center;
+  }
+  
+  .dropdown-content {
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgb(181, 226, 193);
+  }
+
+  .fotter{
+    margin-right: 10em;
+  }
