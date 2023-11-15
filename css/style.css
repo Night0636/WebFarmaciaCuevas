@@ -14,7 +14,7 @@ header{
     flex-direction: row;
 
     border: black 0.1em solid;
-    background-color: aquamarine;
+    background-color: rgb(115, 223, 245);
 
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ nav.res{
     flex-direction: row;
 
     border: black 0.1em solid;
-    background-color: aquamarine;
+    background-color: rgb(162, 231, 245);
 
 }
 
@@ -52,11 +52,25 @@ header .logo{
     margin-left: 50em;
 }
 
-.linkButton{
+#linkButton{
     border: 1px solid black;
     padding: 0.5em;
+    background-color: rgb(100, 149, 245);
+}
 
-    background-color: cadetblue;
+#linkButton a{
+    color:white;
+    text-decoration: none;
+}
+
+.imagen_centro{
+    flex: 5;
+    height: 30em;
+    width: 50em;
+    margin-left: 23em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    border: 2px solid black;
 }
 
 .dropdown {
@@ -64,13 +78,15 @@ header .logo{
     border: 1px solid black;
     position: relative;
     display: inline-block;
-    background-color: rgb(205, 252, 211);
+    background-color: rgb(100, 149, 245);
     height: 3em;
     width: 5em;
     justify-content: center;
+    color: white !important;
   }
-  
-  .dropdown-content {
+
+.dropdown-content {
+    margin: auto;
     border: 1px solid black;
     display: none;
     position: absolute;
@@ -83,7 +99,8 @@ header .logo{
   
   .dropdown:hover .dropdown-content {
     display: block;
-    background-color: rgb(181, 226, 193);
+    background-color: white;
+    justify-content: center;
   }
 
   .fotter{
