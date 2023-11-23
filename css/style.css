@@ -1,25 +1,262 @@
-*{
-    margin: 0em;
-    text-decoration: none;
-}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 
-body{
+  body {
+    height: 100vh;
+    width: 100vw;
+
     display: flex;
     flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b3d9ff;
+    padding: 10px;
+    border: black 0.1em solid;
+  }
+
+  #imatgelogo {
+    height: 8vh;
+    width: 4vw;
+  }
+
+  .dropdowns {
+    display: flex;
+    flex: 2;
+    gap: 1vh;
+    border: black;
+  }
+
+  .dropdown {
+    margin-left: 5vh;
+    display: flex;
+    flex: 3;
+    position: relative;
+    border: black 1px solid;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b3d9ff;
+    min-width: 2vw;
+    padding: 10px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .buscador {
+    display: flex;
+    flex: 2;
+    margin-left: 5vh;
+  }
+
+  .buttons {
+    display: flex;
+    border: black 1px solid;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+  }
+
+  #loginb {
+    flex: 0.5;
+    height: 100%;
+    height: auto;
+    width: auto;
+    padding: 0.5em;
+    background-color: rgb(100, 149, 245);
+    border: black 0.1em solid;
+  }
+
+  #registerb {
+    flex: 0.5;
+    height: 100%;
+    height: auto;
+    width: auto;
+    padding: 0.5em;
+    background-color: rgb(100, 149, 245);
+    border: black 0.1em solid;
+  }
+
+  .main{
+    display: flex;
+    flex: 3;
+  }
+
+  .imagen_centro{
+    flex: 2;
+    height: 70vh;
+    width: 10vw;
+    border: 0.1em solid black;
+  }
+
+  #horario {
+    border-collapse: collapse;
+    width: 100%;
+    flex: 0.5;
+  }
+  
+  #horario th, #horario td {
+    border: 0.1em solid black;
+    padding: 1vh;
+    text-align: center;
+  }
+  
+  #horario th {
+    background-color: lightgray;
+  }
+  
+  #horario tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+
+  .footer {
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .column {
+    flex-basis: 3;
+    padding: 3vw;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-bottom: 5vh;
+  }
+  
+  .button {
+    width: 1vw;
+    height: 2vh;
+    background-color: white;
+    border: none;
+    margin-right: 2vh;
+  }
+  
+  .button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 header{
+    flex: 2;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    flex: 1;
+    height: 100%;
+
+    border: black 0.1em solid;
+}
+
+.dropdownMenu{
+    flex: 3;
+    height: 100%;
+    
     display: flex;
     flex-direction: row;
 
     border: black 0.1em solid;
-    background-color: rgb(115, 223, 245);
+}
 
-    align-items: center;
+.dropdownMenu a{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
     justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.buscador{
+    display: flex;
+    flex: 3;
+    height: 20%;
+    border: black 0.1em solid;
 
 }
+
+#linkButton{
+    flex: 1;
+    height: 100%;
+    height: auto;
+    width: auto;
+    padding: 0.5em;
+    background-color: rgb(100, 149, 245);
+    border: black 0.1em solid;
+}
+
+#linkButtonLogin{
+    flex: 1;
+    height: 100%;
+    height: auto;
+    width: auto;
+    padding: 0.5em;
+    background-color: rgb(100, 149, 245);
+    border: black 0.1em solid;
+}
+
+nav{
+    flex: 1;
+}
+
+main{
+    flex: 8;
+    display: flex;
+    border: black 0.1em solid;
+}
+
+footer{
+    flex: 2;
+}
+
+.barStyle{
+    border: black 0.1em solid;
+    background-color: rgb(115, 223, 245);
+}
+
 
 nav.res{
     display: flex;
@@ -30,7 +267,8 @@ nav.res{
 
 }
 
-/* Aquestes regles estil correspon al logo del header */
+/*Aquestes regles estil correspon al logo del header */
+/*
 header .logo{
     flex: 1;
 
@@ -39,23 +277,19 @@ header .logo{
 }
 
 #imatge_logo{
-    max-height: 10em;
-    max-width: 100%;
-
+    justify-content: center;
+    max-height: 40%;
+    max-width: 40%;
+    border: 1em;
     margin: 2em;
-
+    
 }
 
 /* Aquestes regles estil correspon al buscador del header */
+/*
 .buscador{
     flex: 4;
     margin-left: 50em;
-}
-
-#linkButton{
-    border: 1px solid black;
-    padding: 0.5em;
-    background-color: rgb(100, 149, 245);
 }
 
 #linkButton a{
@@ -73,17 +307,19 @@ header .logo{
     border: 2px solid black;
 }
 
+
 .dropdown {
+    justify-content: center;
+    align-items: start;
     margin-left: 2em;
     border: 1px solid black;
     position: relative;
     display: inline-block;
     background-color: rgb(100, 149, 245);
-    height: 3em;
+    height: 2em;
     width: 5em;
-    justify-content: center;
-    color: white !important;
-  }
+    color: white;
+}
 
 .dropdown-content {
     margin: auto;
@@ -93,16 +329,9 @@ header .logo{
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
-
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
     background-color: white;
-    justify-content: center;
-  }
-
-  .fotter{
-    margin-right: 10em;
   }
