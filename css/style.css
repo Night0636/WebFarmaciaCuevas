@@ -152,7 +152,29 @@
     cursor: pointer;
   }
 
-/*
+  /* Estilos para el precio */
+.precio {
+  font-size: 5vw;
+  color: #333;
+}
+
+/* Estilos para el botón de comprar */
+.boton-comprar {
+  background-color: rgb(69, 79, 255);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-right: 82vw;
+  text-align: center;
+}
+
+/* Estilos al pasar el cursor sobre el botón 
+.boton-comprar:hover {
+  background-color: #0056b3;
+}
+
 *{
     margin: 0;
     padding: 0;
