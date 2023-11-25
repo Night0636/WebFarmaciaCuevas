@@ -5,50 +5,68 @@
   }
 
   body {
-    height: 100vh;
+    /*height: 100vh;
     width: 100vw;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
   }
 
   .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #b3d9ff;
-    padding: 10px;
-    border: black 0.1em solid;
+    /*padding: 10px;*/
+    outline: black 0.1em solid;
+    height: 15vh;
   }
 
-  #imatgelogo {
-    height: 8vh;
-    width: 4vw;
+  header div{
+    flex: 1;
+  }
+
+  header form{
+    flex: 1;
+  }
+
+  .logoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  #imatgeFC{
+    max-height: 5rem;
+    max-width: 5rem;
   }
 
   .dropdowns {
     display: flex;
     flex: 2;
-    gap: 1vh;
-    border: black;
+    /*gap: 1vh;*/
   }
 
   .dropdown {
-    margin-left: 5vh;
+    /*margin-left: 5vh;*/
     display: flex;
     flex: 3;
     position: relative;
-    border: black 1px solid;
+    outline: black 1px solid;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #b3d9ff;
-    min-width: 2vw;
-    padding: 10px;
+    /*min-width: 2vw;
+    padding: 10px;*/
   }
 
   .dropdown:hover .dropdown-content {
@@ -58,15 +76,15 @@
   .buscador {
     display: flex;
     flex: 2;
-    margin-left: 5vh;
+    /*margin-left: 5vh;*/
   }
 
   .buttons {
     display: flex;
-    border: black 1px solid;
+    outline: black 1px solid;
     flex-direction: column;
     align-items: center;
-    gap: 1vh;
+    /*gap: 1vh;*/
   }
 
   #loginb {
@@ -74,9 +92,9 @@
     height: 100%;
     height: auto;
     width: auto;
-    padding: 0.5em;
+    /*padding: 0.5em;*/
     background-color: rgb(100, 149, 245);
-    border: black 0.1em solid;
+    outline: black 0.1em solid;
   }
 
   #registerb {
@@ -84,21 +102,54 @@
     height: 100%;
     height: auto;
     width: auto;
-    padding: 0.5em;
+    /*padding: 0.5em;*/
     background-color: rgb(100, 149, 245);
-    border: black 0.1em solid;
+    outline: black 0.1em solid;
   }
 
-  .main{
+  main{
     display: flex;
-    flex: 3;
+    flex-direction: column;
+
+    height: 70vh;
+  }
+
+  main article{
+    flex: 1;
+  }
+
+  .mainImg{
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid black;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mainInfo{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mainInfo section{
+    flex: 1;
+    
+    outline: 1px solid black;
   }
 
   .imagen_centro{
-    flex: 2;
-    height: 70vh;
-    width: 10vw;
-    border: 0.1em solid black;
+    height: 17rem;
+    width: 32rem;
+    outline: 1px solid black;
+  }
+
+  .aladofoto{
+    font-size: 3em;
+    color: darkblue;
+  }
+
+  .mainInfo{
+    flex: 1;
   }
 
   #horario {
@@ -122,216 +173,35 @@
   }
   
 
-  .footer {
+  footer {
     background-color: darkblue;
     display: flex;
     justify-content: space-between;
     color: white;
+
+    height: 15vh;
+
+    display: flex;
+    flex-direction: row;
   }
   
   .column {
-    flex-basis: 3;
-    padding: 3vw;
+    flex: 1;
   }
   
   .title {
     font-weight: bold;
-    margin-bottom: 5vh;
   }
   
   .button {
-    width: 1vw;
-    height: 2vh;
-    background-color: white;
-    border: none;
-    margin-right: 2vh;
+    width: 2em; 
+    height: 2em; 
+    margin-left: 1em;
+    background-color: darkblue;
   }
   
-  .button:hover {
-    background-color: lightgray;
-    cursor: pointer;
-  }
+  .imgblogo {
+    max-width: 2em;
+    max-height: 2em;
 
-/*
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-
-
-body{
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-header{
-    flex: 2;
-    height: 5vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.logo{
-    flex: 1;
-    height: 100%;
-
-    border: black 0.1em solid;
-}
-
-.dropdownMenu{
-    flex: 3;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: row;
-
-    border: black 0.1em solid;
-}
-
-.dropdownMenu a{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.buscador{
-    display: flex;
-    flex: 3;
-    height: 20%;
-    border: black 0.1em solid;
-
-}
-
-#linkButton{
-    flex: 1;
-    height: 100%;
-    height: auto;
-    width: auto;
-    padding: 0.5em;
-    background-color: rgb(100, 149, 245);
-    border: black 0.1em solid;
-}
-
-#linkButtonLogin{
-    flex: 1;
-    height: 100%;
-    height: auto;
-    width: auto;
-    padding: 0.5em;
-    background-color: rgb(100, 149, 245);
-    border: black 0.1em solid;
-}
-
-nav{
-    flex: 1;
-}
-
-main{
-    flex: 8;
-    display: flex;
-    border: black 0.1em solid;
-}
-
-footer{
-    flex: 2;
-}
-
-.barStyle{
-    border: black 0.1em solid;
-    background-color: rgb(115, 223, 245);
-}
-
-
-nav.res{
-    display: flex;
-    flex-direction: row;
-
-    border: black 0.1em solid;
-    background-color: rgb(162, 231, 245);
-
-}
-
-/*Aquestes regles estil correspon al logo del header */
-/*
-header .logo{
-    flex: 1;
-
-    display: flex;
-    justify-content: left;
-}
-
-#imatge_logo{
-    justify-content: center;
-    max-height: 40%;
-    max-width: 40%;
-    border: 1em;
-    margin: 2em;
-    
-}
-
-/* Aquestes regles estil correspon al buscador del header */
-/*
-.buscador{
-    flex: 4;
-    margin-left: 50em;
-}
-
-#linkButton a{
-    color:white;
-    text-decoration: none;
-}
-
-.imagen_centro{
-    flex: 5;
-    height: 30em;
-    width: 50em;
-    margin-left: 23em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    border: 2px solid black;
-}
-
-
-.dropdown {
-    justify-content: center;
-    align-items: start;
-    margin-left: 2em;
-    border: 1px solid black;
-    position: relative;
-    display: inline-block;
-    background-color: rgb(100, 149, 245);
-    height: 2em;
-    width: 5em;
-    color: white;
-}
-
-.dropdown-content {
-    margin: auto;
-    border: 1px solid black;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-    background-color: white;
   }

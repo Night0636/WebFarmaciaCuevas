@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Registrarse</title>
+        <meta charset="UTF-8">
+		<title>Registrarse</title>
+		<link rel="stylesheet" href="../css/stylelogin.css">
     </head>
     <body>
-        <form action="./login.php" method="POST" enctype="multipart/form-data">
-            <!-- Entrada de text bàsica -->
-            <p>
-                <label for="idUser"><b>Usuari</b></label>
-                <input type="text" id="idUser" name="uname" placeholder="Introdueix el teu usuari" autofocus="" size="50" maxlength="100" required="">
-            </p>
-            
-            <!-- Entrada de contrasenya -->
-            <p>
-                <label for="idPwd"><b>Contrasenya</b></label>
-                <input type="password" id="idPwd" name="password" placeholder="Introdueix la teva contrasenya" size="10" maxlength="16" value="Educem00.">
-            </p>
-            
-            <!-- Entrada de mail -->
-            <p>
-                <label for="idEmail"><b>Mail</b></label>
-                <input type="email" id="idEmail" name="mail" placeholder="Introdueix el teu correu electrònic">
-            </p>
-            
-            <!-- Entrada de fitxer (imatge) -->
-            <p>
-                <label for="idAvatar"><b>Avatar</b></label>
-                <input type="file" id="idAvatar" name="avatar" accept="image/x- png,image/gif,image/jpeg">
-            </p>
-           </form>
+        <div class="container">
+            <h2>Registro</h2>
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+              </div>
+              <div class="form-group">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+              </div>
+              <div class="form-group">
+                <label for="confirmar-contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+              </div>
+              <div class="form-group">
+                <button type="submit">Registrarse</button>
+              </div>
+            </form>
+          </div>
     </body>
 </html>
