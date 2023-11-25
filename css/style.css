@@ -166,10 +166,14 @@
   border: none;
   border-radius: 100px;
   cursor: pointer;
-  margin-right: 82vw;
+  margin-right: 74vw;
   text-align: center;
 }
 
+.centrado {
+margin-left: 10vh;
+margin-right: 10vh;
+}
 /* Estilos al pasar el cursor sobre el botón 
 .boton-comprar:hover {
   background-color: #0056b3;
