@@ -203,5 +203,33 @@
   .imgblogo {
     max-width: 2em;
     max-height: 2em;
-
   }
+
+/* Estilos para el precio */
+.precio {
+  font-size: 5vw;
+  color: #333;
+}
+
+/* Estilos para el botón de comprar */
+.boton-comprar {
+  background-color: rgb(69, 79, 255);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-right: 74vw;
+  text-align: center;
+}
+
+.centrado {
+margin-left: 10vh;
+margin-right: 10vh;
+}
+
+
+.boton-comprar:hover {
+  background-color: #0056b3;
+}
+
