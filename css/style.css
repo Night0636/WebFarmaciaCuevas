@@ -138,8 +138,8 @@
   }
 
   .imagen_centro{
-    height: 17rem;
-    width: 32rem;
+    max-height: 20rem;
+    max-width: 30rem;
     outline: 1px solid black;
   }
 
@@ -215,11 +215,10 @@
 .boton-comprar {
   background-color: rgb(69, 79, 255);
   color: #fff;
-  padding: 10px 20px;
+  padding: 2vh 10vw;
   border: none;
-  border-radius: 100px;
+  border-radius: 10vw;
   cursor: pointer;
-  margin-right: 74vw;
   text-align: center;
 }
 
